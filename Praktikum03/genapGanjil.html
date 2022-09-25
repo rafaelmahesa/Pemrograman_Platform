@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung jumlah bilangan ganjil genap pada suatu range</title>
+</head>
+<body>
+    <script>
+        let rangeAwal = parseInt(prompt('Masukkan angka awal range: '));
+        let rangeAkhir = parseInt(prompt('Masukkan angka akhir range: '));
+        let genap = 0;
+        let ganjil = 0;
+
+        for(let i=rangeAwal; i <= rangeAkhir; i++) {
+            if(i%2 == 0) genap++;
+            else if(i%2 == 1) ganjil++;
+        }
+        console.log("Jarak range "+rangeAwal+"-"+rangeAkhir, "Jumlah angka genap : "+genap, "Jumlah angka ganjil: "+ganjil);
+    </script>
+</body>
+</html>

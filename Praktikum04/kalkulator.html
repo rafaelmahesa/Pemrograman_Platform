@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <script>
+        function tambah(){
+            var bilangan1 = parseFloat(document.getElementById("bilangan1").value);
+            var bilangan2 = parseFloat(document.getElementById("bilangan2").value);
+            var jumlah = bilangan1+bilangan2;
+            console.log(bilangan1, bilangan2, jumlah);
+            document.getElementById("hasil").value = jumlah;
+        }
+        function kurang(){
+            var bilangan1 = parseFloat(document.getElementById("bilangan1").value);
+            var bilangan2 = parseFloat(document.getElementById("bilangan2").value);
+            var jumlah = bilangan1-bilangan2;
+            document.getElementById("hasil").value = jumlah;
+        }
+    </script>
+</head>
+<body>
+    <h1>Kalkulator Tambah/Kurang</h1>
+    <form action="#">
+        <label for="bilangan1">Bilangan 1:</label>
+        <input type="text" id="bilangan1"/>
+        <br>
+        <label for="bilangan2">Bilangan 2:</label>
+        <input type="text" id="bilangan2"/>
+        <br>
+        <input type="submit" value ="Tambah" onclick="tambah();"/>
+        <input type="submit" value ="Kurang" onclick="kurang();"/>
+        <br>
+        <label for="hasil">Hasil:</label>
+        <input type="text" id="hasil"/>
+    </form>
+</body>
+</html>

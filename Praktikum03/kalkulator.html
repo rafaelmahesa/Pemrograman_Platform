@@ -9,7 +9,7 @@
 <body>
     <script>
         let x = parseFloat(prompt("Masukkan angka pertama: "));
-        let operator= prompt("Masukkan operator: ");
+        let operator= prompt("Masukkan operator (+, -, *, /): ");
         let y = parseFloat(prompt("Masukkan angka kedua: "));
         let result;
 
@@ -18,7 +18,7 @@
         else if (operator == "*") result = x * y;
         else if (operator == "/") result = x / y;
 
-        console.log(result);
+        console.log(x+" "+operator+" "+y+" = "+result);
     </script>
 </body>
 </html>

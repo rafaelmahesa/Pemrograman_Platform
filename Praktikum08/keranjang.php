@@ -38,7 +38,6 @@
             }
             echo "</ol>";
             echo "<a href='listBarang.php'>kembali Pilih Barang</a>";
-
         }
     ?>
 </body>
